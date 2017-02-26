@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Trivia Game</title>
+
+	<link rel="stylesheet" href="assets/css/reset.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+
+	<!-- Latest compiled and minified CSS & JS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+	crossorigin="anonymous"></script>
+
+</head>
+
+
+<body>
+	<div class="container-fluid">
+		<div class="jumbotron">
+			<div class="container">
+				<h1>Basic Trivia</h1>
+				<h2 id="countdowntimer"></h2>
+
+			</div>
+		</div>
+
+	<form action="" method="POST" role="form">
+		<div class="radio trivia-question" id="q1">
+			<h4>Which team won the 2016-2017 NBA Championship?</h4>
+			<label class="radio-inline">
+				<input type="radio" name="nbachamp" id="input" value="true" onclick="radioValue()">
+				Cleveland Cavaliers
+			</label>
+			<label class="radio-inline">
+				<input type="radio" name="nbachamp" id="input" value="false" onclick="radioValue()">
+				Golden State Warriors
+			</label>
+			<label class="radio-inline">
+				<input type="radio" name="nbachamp" id="input" value="false"onclick="radioValue()">
+				Houston Rockets
+			</label>
+		</div>
+
+		<div class="radio trivia-question" id="q2">
+			<h4>Which team won the 2017 Superbowl?</h4>
+			<label class="radio-inline">
+				<input type="radio" name="nflchamp" id="input" value="false"onclick="radioValue(this.id)">
+				Atlanta Hawks
+			</label>
+			<label class="radio-inline">
+				<input type="radio" name="nflchamp" id="input" value="true" onclick="radioValue(this.id)">
+				New England Patroits
+			</label>
+			<label class="radio-inline">
+				<input type="radio" name="nflchamp" id="input" value="false"onclick="radioValue(this.id)">
+				Dallas Cowboys
+			</label>
+		</div>
+		
+		<div class="radio trivia-question">
+			<h4>Steve Jobs and Steve Wozniak founded Oracle and Java.</h4>
+			<label class="radio-inline">
+				<input type="radio" name="stevesteve" id="input" value="false"onclick="radioValue()">
+				True
+			</label>
+			<label class="radio-inline">
+				<input type="radio" name="stevesteve" id="input" value="true" onclick="radioValue()">
+				False
+			</label>
+		</div>
+
+		<div class="radio trivia-question" id="q3">
+			<h4>Who was the first player in NBA history to be elected unanimous MVP?</h4>
+			<label class="radio-inline">
+				<input type="radio" name="nbamvp" id="input" value="false"onclick="radioValue(this.id)">
+				Michael Jordan
+			</label>
+			<label class="radio-inline">
+				<input type="radio" name="nbamvp" id="input" value="false" onclick="radioValue(this.id)">
+				Lebron James
+			</label>
+			<label class="radio-inline">
+				<input type="radio" name="nbamvp" id="input" value="true"onclick="radioValue(this.id)">
+				Stephen Curry
+			</label>
+
+		</div>
+		
+			<button type="submit" class="btn btn-primary">Done</button>
+	</form>
+	</div>
+	<script type="text/javascript" src="assets/javascript/app.js"></script>
+		
+</body>
+</html>
